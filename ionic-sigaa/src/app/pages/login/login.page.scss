@@ -1,0 +1,40 @@
+.btn-esqueci {
+  background: #e5eaff;
+  border: none;
+  border-radius: 6px;
+  color: #3c4fb0;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 6px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn-esqueci:hover {
+  background: #d2ddff;
+}
+
+.btn-cadastrar {
+  background: #e5eaff;
+  border: none;
+  border-radius: 6px;
+  color: #3c4fb0;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 12px;
+  padding: 8px 0;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+.btn-cadastrar ion-icon {
+  font-size: 1.2em;
+}
+.btn-cadastrar:hover {
+  background: #d2ddff;
+}

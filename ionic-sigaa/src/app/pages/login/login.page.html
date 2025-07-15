@@ -1,0 +1,49 @@
+<ion-content class="ion-padding">
+
+  <!-- Cabeçalho azul -->
+  <div class="login-header">
+    <div class="title">IFSC - SIGAA</div>
+    <div class="subtitle">Sistema Integrado de Gestão de Atividades Acadêmicas</div>
+  </div>
+
+  <!-- Alerta -->
+  <div class="alerta">
+    <span class="atencao">ATENÇÃO!</span>
+    <br>
+    O sistema diferencia letras maiúsculas e minúsculas APENAS na senha, portanto ela deve ser digitada da mesma maneira que no cadastro.
+  </div>
+
+  <!-- Caixa do formulário de login -->
+  <div class="login-box">
+    <h2>Entrar no sistema</h2>
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked">Usuário:</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked">Senha:</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+    <ion-button expand="block" color="primary" (click)="entrar()" class="btn-entrar">Entrar</ion-button>
+    <button class="btn-esqueci" (click)="recuperarSenha()">Esqueci meu usuário ou senha</button>
+  </div>
+
+  <!-- Caixa para cadastro -->
+  <div class="aluno-box">
+    <div style="font-weight:bold;">Aluno,</div>
+    <div style="font-size: 0.95em;">
+      caso ainda não possua cadastro no SIGAA, clique no link abaixo.
+    </div>
+    <button class="btn-cadastrar" (click)="cadastrar()">
+      <ion-icon name="person-add-outline"></ion-icon>
+      Cadastre-se
+    </button>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="rodape">
+    SIGAA | DTIC - Diretoria de Tecnologia da Informação e Comunicação<br>
+    (48) 3877-9000 | &#64; IFSC | v3.8.1.956
+  </div>
+
+</ion-content>
