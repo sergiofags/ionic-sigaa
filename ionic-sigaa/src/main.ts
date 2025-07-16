@@ -12,3 +12,9 @@ bootstrapApplication(AppComponent, {
     provideRouter(routes, withPreloading(PreloadAllModules)),
   ],
 });
+
+import { isPlatform } from '@ionic/angular';
+
+if (isPlatform('hybrid') || isPlatform('mobileweb') || isPlatform('desktop')) {
+  document.body.classList.remove('dark');
+}
